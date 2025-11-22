@@ -23,9 +23,6 @@ Powered by OpenAI GPT-4o, the bot understands natural language input and automat
 ### Flexible Property Editing
 Advanced editing system that allows users to find properties by describing their characteristics (location, price, type) rather than requiring exact IDs. Users can update specific fields, delete information, or modify multiple attributes in a single operation.
 
-### 100% English Interface
-All user-facing messages, prompts, code comments, and documentation are in English, ensuring consistency and professional communication throughout the application.
-
 ### Lightweight Database
 Uses SQLite by default for easy setup and deployment. No external database server required, making it perfect for small to medium-scale deployments. Can be easily upgraded to PostgreSQL or MySQL for production environments.
 
