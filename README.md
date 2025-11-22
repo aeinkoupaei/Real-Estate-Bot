@@ -8,9 +8,6 @@ A fully interactive Telegram chatbot for managing real estate properties with AI
 
 ## Features
 
-### Goal-First Architecture
-Enforces goal selection before any interaction, eliminating ambiguity and ensuring clear user intent. Users must choose their objective (register, search, edit, or filter properties) before providing information, preventing confusion and improving the overall user experience.
-
 ### Complete Voice Support
 Full natural language voice interaction for all operations. Users can register properties, search for listings, edit existing entries, and perform all actions using voice messages. The bot converts speech to text using OpenAI transcription models and processes voice input just like typed text, making the interface accessible and convenient.
 
@@ -232,9 +229,6 @@ Real-Estate-Bot/
 
 ## Key Features Explained
 
-### Goal-First Design
-Unlike typical bots that guess intent, this bot **enforces** goal selection first, eliminating confusion. This design pattern ensures users always know what action they're performing and prevents ambiguous interactions.
-
 ### Voice Support
 Not just voice commands, but **full natural language voice interaction** for all operations. The bot uses OpenAI's transcription models to convert voice messages into text and processes them just like typed messages.
 
@@ -243,28 +237,6 @@ Truly remembers conversation context and **never asks to re-enter** information.
 
 ### Interactive Confirmation
 Users can **review and edit** before committing, preventing errors. The confirmation flow shows a complete summary, allows field-level edits, and provides clear options to confirm, modify, or cancel.
-
-## Deployment
-
-### Quick Deploy Options
-
-**Railway (Easiest):**
-1. Push to GitHub
-2. Connect on [Railway.app](https://railway.app)
-3. Add environment variables
-4. Done!
-
-**DigitalOcean (Best Value):**
-1. Create $6/month droplet
-2. Run `deploy_server_setup.sh`
-3. Bot runs 24/7 automatically
-
-**Docker:**
-```bash
-docker-compose up -d
-```
-
-See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ## Documentation
 
@@ -315,26 +287,6 @@ python bot.py
 # Then test in Telegram
 ```
 
-### Test Scenarios
-
-1. **Goal Selection Enforcement**
-   - Send message without selecting goal → Should show warning
-
-2. **Property Registration**
-   - Register complete property → Should save successfully
-   - Register incomplete property → Should ask for missing fields
-
-3. **Voice Input**
-   - Send voice message → Should convert to text and process
-
-4. **Stateful Memory**
-   - Provide info in multiple messages → Should accumulate data
-
-5. **Property Editing**
-   - Edit by criteria → Should filter and show matching properties
-   - Edit specific field → Should update only that field
-   - Delete field → Should clear the field
-
 ## Troubleshooting
 
 ### Bot Not Responding
@@ -351,20 +303,6 @@ python bot.py
 - Check database file permissions
 - Verify all required fields provided
 - Check terminal for error messages
-
-## Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-[Specify your license here]
 
 ## Acknowledgments
 
@@ -409,8 +347,3 @@ Bot: Your property has been successfully registered!
      [Shows property details]
 ```
 
----
-
-**Built with care for intelligent real estate management**
-
-**Start managing properties smarter today!**
