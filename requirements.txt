@@ -1,0 +1,31 @@
+# Real Estate Management Chatbot - Python Dependencies
+# Python 3.8+ required
+
+# ===== Telegram Bot Framework =====
+# Main Telegram bot library with async support
+python-telegram-bot==20.7
+
+# ===== OpenAI GPT + Whisper =====
+# Text generation, extraction, and speech-to-text
+openai==0.28.1
+
+# ===== Database ORM =====
+# SQLAlchemy for database operations (SQLite, PostgreSQL, MySQL support)
+sqlalchemy>=2.0.25
+
+# ===== Environment Variables =====
+# Load environment variables from .env file
+python-dotenv>=1.0.0
+
+# ===== Date and Time Utilities =====
+# Date parsing and timezone handling
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# ===== Logging =====
+# Colored console logging for better debugging
+colorlog>=6.8.0
+
+# ===== HTTP Client (dependency of python-telegram-bot) =====
+# Required by python-telegram-bot for API requests
+httpx>=0.25.0
